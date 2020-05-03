@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Tic tac toe by Rusev</title>
+</head>
+<body>
+    <div class="game-info">
+        <div class="player p-one">
+            <h3>Player One (X)</h3>
+            <h3>Points: <span id="playerOnePoints"></span></h3>
+        </div>
+
+        <div class="player p-two">
+            <h3>Player Two(O)</h3>
+            <h3>Points: <span id="playerTwoPoints"></span></h3>
+        </div>
+        
+    </div>
+
+    <div class="player-turn">
+        <span id='turn'>Player One (X)'s turn</span>
+    </div>
+
+    <div class="game-container show-new-game">
+        <div class="game-reset">
+            <button class="new-game-btn">New Game</button>
+        </div>
+
+        <div class="item" data-cell-index="0"></div>
+        <div class="item" data-cell-index="1"></div>
+        <div class="item" data-cell-index="2"></div>
+
+        <div class="item" data-cell-index="3"></div>
+        <div class="item" data-cell-index="4"></div>
+        <div class="item" data-cell-index="5"></div>
+
+        <div class="item" data-cell-index="6"></div>
+        <div class="item" data-cell-index="7"></div>
+        <div class="item" data-cell-index="8"></div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

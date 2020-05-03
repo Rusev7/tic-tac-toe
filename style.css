@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #B9E3C6;
+    padding: 30px;
+}
+/* Game info section */
+.game-info {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: #59C9A5;
+    padding: 15px 30px;
+}
+
+.player {
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.player-turn {
+    padding: 15px 30px;
+    background-color: #59C9A5;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Game container*/
+
+.game-reset {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    z-index: 10;
+    opacity: 0;
+    display: none;
+}
+
+.show-new-game:hover .game-reset{
+    display: flex;
+    animation: fade-in 10s ease .2s infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.new-game-btn {
+    padding: 15px 30px;
+    width: 150px;
+    outline: none;
+    border: none;
+    background-color: #59C9A5;
+    transition: .3s ease;
+}
+
+.new-game-btn:hover {
+    cursor: pointer;
+    background-color: #D81E5B;
+    transform: scale(1.5)
+}
+
+.game-container {
+    background-color: #59C9A5;
+    height: 450px;
+    width: 500px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+}
+
+.item:hover {
+    cursor: pointer;
+}
