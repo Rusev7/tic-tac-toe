@@ -2,7 +2,7 @@ let scores, gamePlaying, activePlayer, gameState;
 const gameInfo = document.getElementById('turn');
 gameInfo.textContent = '';
 scores = [0, 0];
-activePlayer = 'X'
+activePlayer = 'X';
 
 const winningConditions = [
     [0, 1, 2],
@@ -88,6 +88,7 @@ function resultValidation() {
         gamePlaying = false;
         gameInfo.textContent = 'No winner this round!';
         console.log(`Draw!`);
+        document.querySelector('.game-container').classList.add('show-new-game');
         return;
     }
 
